@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web.css">
+    <title>Web</title>
+</head>
+<body>
+    <h1>Generación de Factura</h1>
+    <fieldset>
+        <br>
+        <p>Datos Empresa:</p>
+        <ul>
+            <li>Nombre: <p id="nomemp">JB S.A.</p></li>
+            <li>CIF: <p id="cifemp">65213154A</p></li>
+            <li>Dirección: <p id="direcemp">Centro Empresarial Romero Vargas</p></li>
+        </ul>
+        <br>
+        <hr>
+        <form action="">
+            <br>
+            <p>Datos Cliente:</p>
+            <ul>
+                <li><label for="nomc">Nombre:</label> <input type="text" name="nomc" id="nomc"></li>
+                <br>
+                <li><label for="cifc">CIF:</label> <input type="text" name="cifc" id="cifc" pattern="[0-9]{8}[A-Z]" title="Patrón a seguir: [0-9]{8}[A-Z]"></li>
+                <br>
+                <li><label for="dirc">Dirección:</label> <input type="text" name="dirc" id="dirc"></li>
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <p>Datos Productos:</p>
+            <ul>
+                <li><p id="p1">Balón</p> 12.50 € // UN --> <input type="number" min="0" value="0" id="pr1"></li>
+                <br>
+                <li><p id="p2">DVD De Disney</p> 10.99 € // UN --> <input type="number" min="0" value="0" id="pr2"></li>
+                <br>
+                <li><p id="p3">Funko Pop!</p> 15.00 € // UN --> <input type="number" min="0" value="0" id="pr3"></li>
+                <br>
+                <li><p id="p4">Juego de PS4</p> 18.00 € // UN --> <input type="number" min="0" value="0" id="pr4"></li>
+                <br>
+                <li><p id="p5">Gorra John Cena</p> 9.50 € // UN --> <input type="number" min="0" value="0" id="pr5"></li>
+            </ul>
+            <br>
+            <input type="button" value="Enviar" onclick="calc()">
+            <input type="reset" value="Reinicar">
+        </form>
+    </fieldset>
+    <br>
+    <p id="res"></p>
+    <script src="facturas.js"></script>
+</body>
+</html>

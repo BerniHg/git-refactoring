@@ -1,0 +1,20 @@
+body
+{
+    background-color: lightblue
+}
+
+h1, p, li
+{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+h1
+{
+    color: green;
+}
+
+
+fieldset
+{
+    background-color: ghostwhite;
+}

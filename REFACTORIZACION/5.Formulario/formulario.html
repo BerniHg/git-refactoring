@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Registro</legend>
+        <form name="form" onsubmit="return ValidaCampos(this)">
+        
+            <label for="dni">DNI:</label>
+            <input type="text" name="dni" id="dni">
+            <br>
+            <br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+            <br>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos">
+            <br>
+            <br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" name="telefono" id="telefono">
+            <br>
+            <br>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Comentarios"></textarea>
+            <br>
+            <br>
+            <label for="hora">Elije la hora:</label>
+            <input type="time" name="hora" id="hora">
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+        <script src="formulario.js"></script>
+    </fieldset>
+</body>
+</html>

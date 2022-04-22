@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJ2</title>
+</head>
+<body>
+    <fieldset>
+        <form>
+            <!--PUNTO 1-->
+            <h2>1. Enviar producto</h2>
+        
+            <select name="tipo" id="tipo">
+        
+                <option value="Camisa">Camisa</option>
+        
+                <option value="Pantalón">Pantalón</option>
+          
+                <option value="Traje">Traje</option>
+          
+                <option value="Complemento">Complemento</option>
+
+            </select>
+
+            <br>
+            <br>
+       
+            <input type="text" name="articulo" id="articulo" placeholder="Artículo">
+            
+            <br>
+            <br>
+        
+            <input type="number" name="talla" id="talla" min="36" max="48" placeholder="Talla">
+        
+            <br>
+            <br>
+        
+            <input type="number" name="cantidad" id="cantidad" min="0" placeholder="Cantidad">
+    
+            <br>
+            <br>
+        
+            <input type="button" value="Enviar" onclick="enviar()">
+        
+            <br>
+            <br>
+        
+            <hr>
+
+            <!--PUNTO 2-->
+            <h2>2. Eliminar producto</h2>
+        
+            <input type="button" value="Eliminar" onclick="eliminar()">
+        
+            <br>
+            <br>
+        
+            <hr>
+
+            <!--PUNTO 3-->
+            <h2>3. Contar productos</h2>
+        
+            <select name="prod" id="prod">
+        
+                <option value="Camisa">Camisa</option>
+        
+                <option value="Pantalón">Pantalón</option>
+          
+                <option value="Traje">Traje</option>
+          
+                <option value="Complemento">Complemento</option>
+        
+            </select>
+        
+            <br>
+            <br>
+        
+            <input type="button" value="Cantidad" onclick="total()">
+        
+            <br>
+            <br>
+       
+            <hr>
+
+            <!--PUNTO 4-->
+            <h2>4. Alistar productos</h2>
+
+            <select name="list" id="list">
+                <option value="Camisa">Camisa</option>
+                <option value="Pantalón">Pantalón</option>
+                <option value="Traje">Traje</option>
+                <option value="Complemento">Complemento</option>
+    
+            </select>
+       
+            <br>
+            <br>
+
+            <input type="button" value="Alistar" onclick="alistar()">
+        </form>
+    </fieldset>
+    <script src="tienda.js"></script>
+</body>
+</html>
